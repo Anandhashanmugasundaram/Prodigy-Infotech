@@ -1,0 +1,540 @@
+*{
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style : normal;
+
+}
+
+.navbar{
+
+  display        : flex;
+  justify-content: space-around;
+  align-items    : center;
+  height         : 17vh;
+  flex-wrap      : wrap;
+  /* border: 2px solid yellow; */
+}
+.logo{
+
+    font-size: 3rem;
+    /* border: 2px solid rgb(247, 20, 20); */
+      
+      
+}
+.nav{
+   
+    display  : flex;
+    gap      : 2rem;
+    font-size: 1.7rem;
+    
+
+  
+}
+    
+
+
+li{
+    list-style-type: none;
+}
+.nav a{
+    text-decoration: none;
+    color          : black;
+    
+}
+.nav a:hover{
+    text-decoration: underline;
+    color          : grey;
+}
+
+.profile{
+display: flex;
+margin : 2%;
+  /* border: 2px solid black; */
+}
+
+.picture{
+      /* border: 2px solid rgb(0, 4, 252); */
+    margin-top: 5%;
+
+}
+.picture img{
+    height: 500px;
+
+}
+.texts{
+      /* border: 2px solid rgb(248, 18, 18); */
+    display       : flex;
+    flex-direction: column;
+    margin        : 10%;
+    text-align    : center;
+}
+.intropara{
+ font-size: 2rem;
+}
+.myname{
+color    : rgb(72, 72, 72);
+font-size: 2.5rem;
+}
+.description{
+    font-size: 1.2rem;
+}
+
+/* ABOUT */
+
+.container{
+      /* border: 2px solid blue; */
+  display       : flex;
+  flex-direction: row;
+  flex-wrap     : wrap;
+
+  justify-content: space-around;
+
+  margin-top     : 7%;
+}
+
+.aboutprofile img{
+    height       : 400px;
+    border-radius: 100%;
+    
+      /* border: 2px solid rgb(255, 0, 0); */
+    
+}
+
+.education{
+    border       : 2px solid rgb(5, 5, 5);
+    border-radius: 10px;
+    height       : 180px;
+    width        : 350px;
+    text-align   : center;
+
+  
+}
+.education img{
+    padding: 5px;
+}
+.experience{
+    border       : 2px solid rgb(5, 5, 5);
+    border-radius: 10px;
+    width        : 350px;
+    height       : 180px;
+    text-align   : center;
+   
+}
+.experience img{
+    padding: 5px;
+}
+.sidediv{
+      /* border:5px solid grey; */
+    display   : flex;
+    flex-wrap : wrap;
+    gap       : 2.5rem;
+    margin-top: 4%;
+    width     : 800px;
+    height    : 300px;
+  
+}
+.aboutme{
+    text-align: center  ;
+}
+
+.miniproject{
+      /* border: 5px solid yellow; */
+    width: 800px;
+}
+
+
+/* SKILLS */
+
+
+.skills_section{
+      /* border: 2px solid rgb(26, 26, 26); */
+ height    : 700px;
+ margin-top: 7%;
+}
+/* .skills_list{
+    border: 2px solid rgb(0, 94, 255); 
+} */
+
+.section-title{
+      /* border: 2px solid rgb(255, 5, 5); */
+    text-align: center;
+    font-size : 2.3rem;
+}
+.skills_conatiner{
+    
+      /* border: 2px solid rgb(173, 255, 10); */
+  height    : max-content;
+  width     : 90%;
+  margin-top: 5%;
+  position  : relative;
+  left      : 5%;
+  display   : flex;
+
+  
+}
+.skills_data{
+      /* border: 5px solid rgb(255, 0, 0); */
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    position       : relative;
+    padding        : 0.5rem 1rem;
+    border-radius  : 0.5rem;
+    box-shadow     : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width          : 80%;
+    margin         : 2%;
+}
+.skill_icon{
+    font-size   : 2rem;
+    margin-right: 1rem;
+    color       : rgb(116, 116, 255);
+}
+.skills_name{
+      /* border: 5px solid rgb(5, 55, 255); */
+    display    : flex;
+    align-items: center;
+}
+.skill_bar{
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 0.3rem;
+  
+    border-radius: 5px;
+    z-index      : -10;
+    
+    border: 3px solid rgb(38, 37, 37);
+}
+/* .skill_headspara{
+     border: 3px solid rgb(222, 8, 44); 
+} */
+.skills_html{
+    width: 95%;
+}
+.skills_css{
+    width: 80%;
+}
+.skills_js{
+    width: 70%;
+ 
+}
+.skills_des{
+ position: relative;
+ left    : 2%;
+}
+.skill_image img{
+       /* border: 2px solid rgb(28, 77, 68); */
+    height: 450px;
+    width : 520px;
+    position: relative;
+   left: 10%;
+}
+.skillheading{
+      /* border: 5px solid rgb(28, 77, 68); */
+    margin-top: 3%;
+}
+
+/* PROJECTS */
+
+
+.projects_section h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.overall{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%;
+
+}
+.projects_container{
+      /* border: 2px solid rgb(153, 255, 0); */
+      margin: 15px;
+      width: 500px;
+      padding: 10px;
+
+      /* animation: animate 10s ease-in infinite; */
+   
+}
+
+.projects_card{
+    /* border:2px solid red; */
+    width: 400px;
+ height: 450px;
+
+}
+.projects_card:hover{
+
+    
+
+    background-image: linear-gradient(to bottom, #ffffff, #fbfbfb, #f6f6f6, #f2f2f2, #eeeeee);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* .project_image{
+    border:2px solid rgb(61, 13, 182); 
+} */
+.projects_content{
+    /* border:2px solid rgb(0, 0, 0); */
+   padding: 15px;
+}
+.project_image img{
+    height: 250px;
+    width: 370px;
+    margin: 15px;
+    
+}
+/* .lasttwo{
+    border:5px solid rgb(39, 3, 49);  
+    
+} */
+
+/* CONTACT */
+
+.contact_mail a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    position: relative;
+    top: 10%;
+}
+.contact_heading{
+    font-size: 2rem;
+}
+.contacts{
+    /* border: 2px solid rgb(252, 0, 0); */
+    text-align: center;
+    height: 500px;
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    margin: 5%;
+   
+}
+.icon{
+font-size: 1.5rem;
+}
+.upper_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    margin: 1.5rem auto;
+    padding: 0.5rem;
+
+
+
+}
+.upper_container:hover{
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.lower_container{
+    /* border: 2px solid rgb(255, 0, 0); */
+    padding: 5px;
+}
+
+.full_container{
+     /* border: 2px solid rgb(10, 57, 151); */
+     display: flex;
+     justify-content:space-around;
+     width: 500px;
+     position: relative;
+     left: 32%;
+     margin-top: 5%;
+     
+    
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: rgb(203, 203, 203);
+    text-align: center;
+    margin-top: 10%;
+    padding: 20px;
+    /* border: 2px solid rgb(255, 38, 0); */
+    
+}
+.footer img{
+    height: 30px;
+    width: 45px;
+    /* border: 2px solid blue; */
+}
+.footer h3{
+    padding: 5px;
+}
+@media screen and (max-width:650px) {
+ 
+
+header{
+    position: relative;
+    left: 25%;
+}
+header .logo{
+    position: relative;
+    left: 10%;
+}
+
+    /* PROFILE */
+
+    .profile{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-left: 70%;
+
+    }
+
+    /* ABOUT */
+
+    .sidediv{
+        
+      display   : flex;
+      flex-wrap : wrap;
+      width: 600px;
+      height: 700px;
+      justify-content: center;
+    
+  }
+  .container{
+   
+width: 500px;
+position: relative;
+left: 10%;
+}
+#about{
+  margin-top: 20%;
+  margin-left: 75%;
+
+}
+.miniproject{
+    width: 300px;
+}
+
+
+/* SKILLS */
+
+.skills_section{
+
+width: 550px;
+height: 150vh;
+margin-left: 10%;
+ 
+ 
+}
+.section-title{
+    position: relative;
+  
+} 
+.skills_conatiner{
+  
+
+display: flex;
+height: 120vh;
+position: relative;
+left: 8%;
+
+
+}
+.skill_image img{
+    height: 350px;
+    width : 350px;
+    position: relative;
+   margin-top: 80%;
+   margin-left: -40%;
+ 
+
+  }
+
+  .skills_data{
+
+margin-top: 20%;
+margin-left: 90%;
+position: relative;
+z-index: 1;
+
+
+
+}
+.skill_headspara{
+width: 150%;
+position: relative;
+left: 65%;
+z-index: 1;
+text-align: left;
+margin-top: 5px;
+}
+.skills_title{
+    text-align: center;
+ margin: 10px   ;
+
+}
+.skills_list{
+    width: auto;
+    margin-top: 200%;
+
+}
+
+
+
+/* PROJECTS */
+
+.projects_container{
+   width: 500px;
+ 
+}
+.projects_section{
+ width: 500px;
+position: relative;
+left: 18%;
+   
+}
+
+/* CONTACT */
+
+
+
+.full_container{
+     
+display: flex;
+flex-direction: column;
+margin: 10px;
+margin-left: -32%;
+width: 100%;
+     
+    
+}
+
+
+
+.contacts{
+   
+  position: relative;
+  left: 35%;
+   
+}
+
+
+
+/* FOOTER */
+
+
+.footer{
+position: relative;
+
+width: 600px;
+    
+}
+   
+}
