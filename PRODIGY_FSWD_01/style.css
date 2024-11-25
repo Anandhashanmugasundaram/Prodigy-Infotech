@@ -1,0 +1,410 @@
+/* Base CSS */
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: against;
+    src        : url(./against_2/against\ regular.otf);
+}
+body {
+    background-image:url("./luca-bravo-O453M2Liufs-unsplash.jpg");
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+    height             : 100vh;
+    width              : 100%;
+    font-family        : "Poppins", sans-serif;
+    font-weight        : 400;
+    font-style         : normal;
+}
+li {
+    list-style-type: none;
+}
+.navbar {
+    background             : linear-gradient((135deg, rgba(255,255,255,0.1),rgba(255,255,255,0)));
+    backdrop-filter        : blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border                 : 2px solid rgba(255,255,255,0.18);
+}
+.navigation {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style-type: none;
+    display        : inline-block;
+    margin         : 20px;
+}
+a {
+    text-decoration: none;
+    color          : rgb(0, 0, 0);
+}
+nav h2 {
+    color    : rgb(0, 0, 0);
+    padding  : 8px;
+    font-size: 2rem;
+}
+/* HOME */
+.home {
+    color          : rgb(0, 0, 0);
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    margin-top     : 10%;
+    flex-wrap      : wrap;
+    padding        : 20px;
+}
+.home h1 {
+    font-size  : 3.5rem;
+    font-family: against;
+    color      : rgb(255, 255, 255);
+}
+.home p {
+    font-size  : 1.6rem;
+    color      : rgb(240, 240, 240);
+    background-color: rgb(0, 0, 0);
+    font-weight: 900;
+    border-radius: 10px;
+}
+.home p:hover{
+    font-size  : 1.6rem;
+    color      : rgb(5, 5, 5);
+    background-color: rgb(145, 129, 129);
+    font-weight: 900;
+    cursor: pointer;
+}
+.navigation h2:hover {
+    cursor: pointer;
+    color : rgb(110, 110, 110);
+}
+/* IMAGES */
+.images img {
+    height        : 150px;
+    width         : 250px;
+    overflow      : hidden;
+    border-radius : 10px;
+    object-fit    : cover;
+    transition    : transform 0.6s;
+}
+.images {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+    margin-top     : 4%;
+}
+.images p {
+    display                : flex;
+    justify-content        : space-around;
+    color                  : rgb(0, 0, 0);
+    font-size              : larger;
+    font-family            : against;
+    backdrop-filter        : blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-weight            : 900;
+    margin-top             : 2%;
+}
+.one:hover, .two:hover, .three:hover, .four:hover {
+    transform: scale(1.2);
+    cursor   : pointer;
+}
+/* ABOUT */
+.contain {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    flex-wrap      : wrap;
+  
+    border-radius  : 10px;
+    padding-bottom : 20px;
+   
+}
+.contain img {
+    position: relative;
+    height  : 450px;
+    width   : 500px;
+  
+
+
+  
+}
+/* .about img {
+  
+    border-radius: 30px;
+  
+} */
+.about h1 {
+    text-align: center;
+}
+.about p {
+    font-size  : larger;
+    max-width  : 600px;
+    min-width  : 100px;
+    margin-top : 5%; 
+
+     padding: 10px;
+   
+
+  
+}
+.about {
+    margin-top: 25%;
+
+    
+   
+
+}
+
+/* CONTACT */
+.contact {
+    margin-top: 15%;
+}
+.contact img {
+    height       : 350px;
+    width        : 400px;
+    margin-top   : 5%;
+    border-radius: 30px;
+}
+.contact h1 {
+    text-align: center;
+}
+.contact p {
+    font-size      : larger;
+    padding        : 10px;
+    border-radius  : 10px;
+    width          : 850px;
+    margin-top     : 5%;
+    display        : flex;
+    justify-content: center;
+    flex-direction : column;
+}
+.contactinfo {
+    display        : flex;
+    justify-content: space-around;
+    margin-top     : 5%;
+    flex-wrap      : wrap;
+}
+/* SERVICE */
+.ourservice {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+}
+.service img {
+    height       : 400px;
+    width        : 450px;
+    margin       : 5%;
+    border-radius: 30px;
+}
+.service h1 {
+    text-align: center;
+}
+.service p {
+    font-size    : larger;
+    width        : 750px;
+    margin-top   : 10%;
+  
+    padding      : 10px;
+    height       : 250px;
+}
+.service {
+    margin-top: 15%;
+}
+/* FOOTER */
+.footer {
+    background-color: rgb(203, 203, 203);
+    text-align      : center;
+    margin-top      : 15%;
+    padding         : 20px;
+}
+.footer img {
+    height: 30px;
+    width : 45px;
+}
+.footer h3 {
+    padding: 5px;
+}
+button {
+    border       : none;
+    border-radius: 10px;
+    width        : 100px;
+    height       : 40px;
+    margin       : 10px;
+    font-size    : medium;
+}
+.signup {
+    background-color: black;
+    color           : white;
+}
+.signup:hover {
+    background-color: rgb(66, 66, 66);
+    cursor          : pointer;
+}
+.login:hover {
+    background-color: rgb(217, 203, 203);
+    cursor          : pointer;
+}
+/* MEDIA SCREEN */
+@media screen and (max-width: 1150px) {
+  
+    .animation img {
+        height: 450px;
+        width : 450px;
+    }
+    .about {
+        margin-top: 60%;
+    }
+    .contact {
+        flex-direction: column;
+        margin-top    : 30%;
+    }
+    .contact p {
+        margin-left: 25%;
+    }
+    .service p {
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .navigation h2 {
+        text-align: center;
+    }
+    .btns {
+        text-align: center;
+    }
+    .contain {
+        width       : 70%;
+        margin-left : 15%;
+    }
+    .about img {
+        height: 300px;
+        width : 350px;
+    }
+    .contact p {
+        width       : 90%;
+        margin-left : 5%;
+    }
+    .contact img {
+        height: 300px;
+        width : 350px;
+    }
+    .service img {
+        height: 300px;
+        width : 350px;
+    }
+    .service p {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navigation h2 {
+        text-align: center;
+    }
+    .btns {
+        text-align: center;
+    }
+    .navigation {
+        flex-direction: column;
+    }
+    nav ul {
+        padding     : 0;
+        text-align  : center;
+    }
+    nav ul li {
+        display: block;
+        margin : 10px 0;
+    }
+    .home {
+        margin-top: 20%;
+    }
+    .contain {
+        width       : 90%;
+        margin-left : 5%;
+    }
+    .about img {
+        height: 250px;
+        width : 300px;
+    }
+    .contact p {
+        width       : 100%;
+        margin-left : 0;
+    }
+    .contact img {
+        height: 250px;
+        width : 300px;
+    }
+    .service img {
+        height: 250px;
+        width : 300px;
+    }
+    .service p {
+        width: 100%;
+    }
+    .footer{
+        margin-top: 30%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .navigation {
+        flex-direction  : column;
+        text-align      : center;
+    }
+    nav ul {
+        padding         : 0;
+    }
+    nav ul li {
+        display         : block;
+        margin          : 10px 0;
+    }
+    .home {
+        margin-top      : 20%;
+        text-align      : center;
+    }
+    .home h1 {
+        font-size       : 2.5rem;
+    }
+    .home p {
+        font-size       : 1.2rem;
+    }
+    .contain {
+        width           : 100%;
+        margin          : 0;
+        text-align      : center;
+    }
+    .about img {
+        height          : 200px;
+        width           : 250px;
+    }
+    .about p {
+        width           : 100%;
+        text-align      : center;
+    }
+    .contact {
+        margin-top      : 25%;
+        text-align      : center;
+    }
+    .contact p {
+        width           : 100%;
+        margin          : 0;
+        text-align      : center;
+    }
+    .contact img {
+        height          : 200px;
+        width           : 250px;
+    }
+    .service img {
+        height          : 200px;
+        width           : 250px;
+    }
+    .service p {
+        width           : 100%;
+        text-align      : center;
+    }
+    .footer{
+        margin-top: 30%;
+    }
+}
